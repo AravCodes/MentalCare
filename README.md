@@ -1,2 +1,6 @@
-# MentalCare
-Detection of Parkinsons through Speech Recognition, Handwriting samples, motion sensors
+# Harnessing Machine Learning for Early Parkinson's Disease Detection
+Parkinson's Disease (PD) stands as the second most prevalent age-related neurological disorder, characterized by a spectrum of motor and cognitive symptoms. Diagnosis of PD proves challenging due to symptom similarities with other conditions like normal aging and essential tremor. Typically, visible symptoms such as gait and communication difficulties emerge around age 50. Although PD remains incurable, certain medications can alleviate symptoms, enabling patients to manage their lifestyles by addressing disease complications.
+
+Early detection of PD is crucial for halting its progression. Recognizing this, our project focuses on employing various Machine Learning (ML) and Deep Learning (DL) models—such as Support Vector Machine (SVM), Random Forest (RF), Decision Tree (DT), K-Nearest Neighbor (KNN), and Multi-Layer Perceptron (MLP)—to distinguish between healthy individuals and those with PD using voice signal features.
+
+We utilized a dataset sourced from the University of California at Irvine (UCI) machine learning repository, comprising 195 voice recordings from examinations conducted on 31 patients. Our approach involved training the models using techniques like Synthetic Minority Over-sampling Technique (SMOTE), Feature Selection, and hyperparameter tuning via GridSearchCV to enhance performance.
