@@ -1,9 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { useNavLinks } from '../Constants'
+import { assets } from '../assets/assets';
+import DropDownMenu from './DropDownMenu';
 
 const Nav = () => {
 
     const navLinks = useNavLinks();
+
+    const [dropDownOpen, setDropDownOpen] =useState(false);
 
   return (
     <header className = "px-5 py-5 absolute z-10 w-full">
@@ -18,9 +22,13 @@ const Nav = () => {
                     {item.label}
                 </a>
                 </li>
-
             ))}
+            <li className = "cursor-pointer"  onClick = {()=>setDropDownOpen(prev=>(!prev))}>
+                <img src = {assets.menu_icon} alt="Menu" width={30} className ="opacity-[40%]"/>
+                {dropDownOpen ? <DropDownMenu/> : null}
+            </li>
         </ul>
+
         
     </nav>
 </header>

@@ -38,7 +38,7 @@ const Predictor = () => {
     <section className="max-sm:px-4 px-[10%] justify-center flex items-center">
       <div className="flex flex-col gap-5 items-center">  {/* Add items-center here */}
         <h1 className="text-slate-gray text-[40px] max-sm:text-[25px] font-montserrat font-bold">
-          Upload Audio Sample for Parkinson's Prediction
+          Upload <span className ="text-coral-red">Audio</span> Sample for Prediction
         </h1>
         <div>
           <form onSubmit={handleSubmit} className="flex flex-row justify-center items-center gap-5 max-sm:flex-col">
