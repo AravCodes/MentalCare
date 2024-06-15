@@ -15,9 +15,9 @@ const Nav = () => {
         <a href="/">
             <img src ="/src/assets/parkinson.png" alt="Logo" width={100} />
         </a>
-        <ul className="flex-1 flex justify-end px-20 items-center gap-16 max-lg:hidden ">
+        <ul className="flex-1 flex justify-end px-20 items-center gap-16  ">
             {navLinks.map((item)=>(
-                <li key ={item.label} onClick={item.onClick ? item.onClick :null} className = "cursor-pointer">
+                <li key ={item.label} onClick={item.onClick ? item.onClick :null} className = "cursor-pointer max-lg:hidden">
                 <a href = {item.href ? item.href : null} className = "font-montserrat leading-normal text-lg text-slate-gray " >
                     {item.label}
                 </a>
