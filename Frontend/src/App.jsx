@@ -25,18 +25,9 @@ const App = () => {
       </section>
 
       <section className = "py-20">
-        <Services/>
+      
       </section>
 
-
-
-      <section>
-        <About/>
-      </section>
-
-      <section className = "padding bg-black padding-x padding-t pb-8">
-        <Footer/>
-      </section>
     </div>
   )
 }
